@@ -126,7 +126,7 @@ const Header = () => {
         </a>
 
         <a
-          href="/path-to-cv.pdf"
+          href="/cv/CV_Jhonyer_santiago_pineda_marin.pdf"
           download
           className="flex items-center justify-center gap-2 rounded-full bg-gray-800 px-4 py-2 text-center text-sm font-bold text-white shadow transition-transform hover:scale-105 hover:bg-gray-700 sm:text-base"
         >
