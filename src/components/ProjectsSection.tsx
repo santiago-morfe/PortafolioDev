@@ -32,6 +32,16 @@ const proyectos = [
     repoLink: 'https://github.com/santiago-morfe/taskGeniusApi',
     // liveLink: 'https://taskgeniusapi-production-5575.up.railway.app'
     projectLink: 'projects/task-genius-api'
+  },
+  {
+    image: '/leper_pets_img.png',
+    title: 'LeperPets',
+    description:
+      'LeperPets es una aplicación web que reimagina los clásicos Tamagotchi, permitiendo a los usuarios cuidar y coleccionar criaturas virtuales directamente desde su navegador.',
+    technologies: ['React', 'TypeScript', 'CSS Modules', 'Vite', 'Netlify'],
+    repoLink: 'https://github.com/santiago-morfe/leperpets',
+    liveLink: 'https://leper-pets-beta.netlify.app/',
+    projectLink: 'projects/leper-pets'
   }
   // Puedes agregar más proyectos aquí
 ]
