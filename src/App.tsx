@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
 import Footer from '../src/components/Footer'
 import NotFound from './pages/NotFound'
 import TaskGeniusApi from './pages/projects/TaskGeniusApi'

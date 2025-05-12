@@ -1,5 +1,5 @@
 import { MdSchool, MdWork, MdCode, MdStar, MdGroups } from 'react-icons/md'
-import { FaReact, FaUnity } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
 import {
   SiDotnet,
   SiTypescript,
@@ -7,11 +7,15 @@ import {
   SiGraphql,
   SiLaravel
 } from 'react-icons/si'
-import { DiJava, DiPython } from 'react-icons/di'
+import { DiPython } from 'react-icons/di'
 
 const AboutMeSection = () => {
   return (
-    <section id="sobremi" className="mx-auto my-16 max-w-5xl px-6 py-12">
+    <section
+      id="sobre mi"
+      className="mx-auto my-6 max-w-5xl px-6 py-24"
+      data-section="sobre mi"
+    >
       <div className="mb-12 text-center">
         <h2 className="mb-4 bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-4xl font-bold text-teal-400">
           {'< Sobre Mí />'}
@@ -25,6 +29,47 @@ const AboutMeSection = () => {
       </div>
 
       <div className="grid gap-12 md:grid-cols-2">
+        {/* Experiencia */}
+        <div className="rounded-xl border-l-4 border-teal-500 bg-gray-800 p-8">
+          <h3 className="mb-6 flex items-center gap-3 text-2xl font-semibold text-white">
+            <MdWork className="text-3xl text-teal-400" />
+            <span>{'< Experiencia />'}</span>
+          </h3>
+          <ul className="space-y-6">
+            <li>
+              <h4 className="text-lg font-medium text-teal-300">
+                Innovamente Parque Interactivo
+              </h4>
+              <p className="mb-2 text-gray-400">2023 - 2024</p>
+              <ul className="ml-4 list-inside list-disc space-y-1 text-gray-300">
+                <li>
+                  Lideré iniciativa para desarrollar app con realidad aumentada
+                </li>
+                <li>Supervisé equipo de pasantes de ingeniería de sistemas</li>
+                <li>
+                  Implementamos metodología Kanban para gestión del proyecto
+                </li>
+                <li>Desarrollamos demo funcional y propuesta técnica</li>
+              </ul>
+            </li>
+            <li>
+              <h4 className="text-lg font-medium text-teal-300">
+                Desarrollador Freelance
+              </h4>
+              <p className="mb-2 text-gray-400">2021 - Actualidad</p>
+              <ul className="ml-4 list-inside list-disc space-y-1 text-gray-300">
+                <li>
+                  Desarrollo de páginas web estáticas para negocios locales
+                </li>
+                <li>
+                  Implementación de soluciones personalizadas para
+                  emprendimientos
+                </li>
+                <li>Tecnologías principales: React, .NET, PostgreSQL</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         {/* Educación */}
         <div className="rounded-xl border-l-4 border-teal-500 bg-gray-800 p-8">
           <h3 className="mb-6 flex items-center gap-3 text-2xl font-semibold text-white">
@@ -83,55 +128,13 @@ const AboutMeSection = () => {
             </li>
           </ul>
         </div>
-
-        {/* Experiencia */}
-        <div className="rounded-xl border-l-4 border-teal-500 bg-gray-800 p-8">
-          <h3 className="mb-6 flex items-center gap-3 text-2xl font-semibold text-white">
-            <MdWork className="text-3xl text-teal-400" />
-            <span>{'< Experiencia />'}</span>
-          </h3>
-          <ul className="space-y-6">
-            <li>
-              <h4 className="text-lg font-medium text-teal-300">
-                Innovamente Parque Interactivo
-              </h4>
-              <p className="mb-2 text-gray-400">2022 - 2023</p>
-              <ul className="ml-4 list-inside list-disc space-y-1 text-gray-300">
-                <li>
-                  Lideré iniciativa para desarrollar app con realidad aumentada
-                </li>
-                <li>Supervisé equipo de pasantes de ingeniería de sistemas</li>
-                <li>
-                  Implementamos metodología Kanban para gestión del proyecto
-                </li>
-                <li>Desarrollamos demo funcional y propuesta técnica</li>
-              </ul>
-            </li>
-            <li>
-              <h4 className="text-lg font-medium text-teal-300">
-                Desarrollador Freelance
-              </h4>
-              <p className="mb-2 text-gray-400">2021 - Actualidad</p>
-              <ul className="ml-4 list-inside list-disc space-y-1 text-gray-300">
-                <li>
-                  Desarrollo de páginas web estáticas para negocios locales
-                </li>
-                <li>
-                  Implementación de soluciones personalizadas para
-                  emprendimientos
-                </li>
-                <li>Tecnologías principales: React, .NET, PostgreSQL</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
       </div>
 
       {/* Habilidades Técnicas */}
       <div className="mt-12 rounded-xl bg-gray-800 p-8">
         <h3 className="mb-8 flex items-center gap-3 text-2xl font-semibold text-white">
           <MdCode className="text-3xl text-teal-400" />
-          <span>Habilidades Técnicas</span>
+          <span>Tegnologías</span>
         </h3>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
@@ -151,20 +154,12 @@ const AboutMeSection = () => {
             <span className="text-gray-300">PostgreSQL</span>
           </div>
           <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
-            <DiJava className="mb-2 text-4xl text-red-500" />
-            <span className="text-gray-300">Java</span>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
             <DiPython className="mb-2 text-4xl text-yellow-400" />
             <span className="text-gray-300">Python</span>
           </div>
           <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
             <SiLaravel className="mb-2 text-4xl text-red-400" />
             <span className="text-gray-300">Laravel</span>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
-            <FaUnity className="mb-2 text-4xl text-gray-300" />
-            <span className="text-gray-300">Unity</span>
           </div>
         </div>
       </div>

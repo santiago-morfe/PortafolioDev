@@ -1,5 +1,3 @@
-import ProjectCard from './ProjectCard'
-
 const proyectos = [
   {
     image: '/task_genius_app_img.png',
@@ -46,19 +44,4 @@ const proyectos = [
   // Puedes agregar más proyectos aquí
 ]
 
-const ProjectsSection = () => {
-  return (
-    <section id="proyectos" className="mx-auto my-12 max-w-5xl px-6 py-8">
-      <h2 className="mb-8 text-3xl font-bold text-teal-500">
-        {'< Proyectos />'}
-      </h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {proyectos.map((proyecto, idx) => (
-          <ProjectCard key={idx} {...proyecto} />
-        ))}
-      </div>
-    </section>
-  )
-}
-
-export default ProjectsSection
+export default proyectos

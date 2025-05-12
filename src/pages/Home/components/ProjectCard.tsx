@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   const cardContent = (
     <div
-      className="overflow-hidden rounded-lg border border-gray-700 bg-gray-800 p-4 shadow-lg transition-transform hover:scale-[1.02]"
+      className="flex h-full flex-col overflow-hidden rounded-lg border border-gray-700 bg-gray-800 p-4 shadow-lg transition-transform hover:scale-[1.02]"
       onClick={() => projectLink && setRedirect(true)}
       style={{ cursor: projectLink ? 'pointer' : 'default' }}
     >
@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       <p className="mt-2 text-gray-300">{description}</p>
 
-      <div className="mt-3 flex flex-wrap gap-2">
+      <div className="my-5 flex flex-wrap gap-2">
         {technologies.map((tech, index) => (
           <span
             key={index}
@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         ))}
       </div>
 
-      <div className="mt-4 flex justify-between">
+      <div className="mt-auto flex justify-between">
         <a
           href={repoLink}
           target="_blank"
