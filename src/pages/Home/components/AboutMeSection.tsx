@@ -5,7 +5,8 @@ import {
   SiTypescript,
   SiPostgresql,
   SiGraphql,
-  SiLaravel
+  SiTailwindcss,
+  SiJsonwebtokens
 } from 'react-icons/si'
 import { DiPython } from 'react-icons/di'
 
@@ -158,8 +159,16 @@ const AboutMeSection = () => {
             <span className="text-gray-300">Python</span>
           </div>
           <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
-            <SiLaravel className="mb-2 text-4xl text-red-400" />
-            <span className="text-gray-300">Laravel</span>
+            <SiJsonwebtokens className="mb-2 text-4xl text-pink-400" />
+            <span className="text-gray-300">JWT</span>
+          </div>
+          <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
+            <SiTailwindcss className="mb-2 text-4xl text-green-400" />
+            <span className="text-gray-300">Tailwind</span>
+          </div>
+          <div className="flex flex-col items-center rounded-lg bg-gray-800 p-4">
+            <SiGraphql className="mb-2 text-4xl text-pink-400" />
+            <span className="text-gray-300">GraphQL</span>
           </div>
         </div>
       </div>
